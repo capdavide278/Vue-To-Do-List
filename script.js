@@ -18,23 +18,23 @@ Bonus:
 const todo = new Vue({
     el : '#app',
     data : {
-        /* newtask : "", */
+        newtask : "",
         todoAr : [
             {
-            text : 'cucinare',
-            done : 'false',
+            text : 'Cucinare',
+            done : false,
             },
             {
-                text : 'studiare',
-                done : 'true',
+                text : 'Studiare',
+                done : true,
             },
             {
-                text : 'accendere il pc',
-                done : 'true',
+                text : 'Accendere il pc',
+                done : true,
             },
             {
-                text : 'leggere un buon libro',
-                done : 'false',
+                text : 'Leggere un buon libro',
+                done : false,
             }
         ]
     },
@@ -43,6 +43,7 @@ const todo = new Vue({
 
         /* milesstone 1 */
         trattino(item){
+        
             if (item.done == true) {
                 return 'tratteggio';
             }
@@ -54,6 +55,16 @@ const todo = new Vue({
         },
         
         /* milestone3 */
-        
+        aggiungi(){
+            const task ={
+                text : this.newtask,
+                done : false
+            }
+
+            if (this.newtask !== " ") {
+                this.todoAr.push(task); 
+                this.newtask =" ";
+            }
+        }
     } 
 });

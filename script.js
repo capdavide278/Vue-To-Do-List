@@ -51,6 +51,9 @@ const todo = new Vue({
         /* milestone 2 */
         rimuovi(index){
             this.todoAr.splice(index, 1);
-        }
+        },
+        
+        /* milestone3 */
+        
     } 
 });

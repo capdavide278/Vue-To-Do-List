@@ -22,7 +22,7 @@
         <div class="cosa-da-fare">
             <ul>
                 <li v-for="(item,i) in todoAr" :key="i">
-                    <div class="inline" :class="trattino(item)">{{item.text}}</div>
+                    <div class="inline" :class="trattino(i)">{{item.text}}</div>
 
                     <div @click="rimuovi(i)" class="inline"><i class="fas fa-times"></i></div>
                 </li>

@@ -61,7 +61,7 @@ const todo = new Vue({
                 done : false
             }
 
-            if (this.newtask !== " ") {
+            if (this.newtask != " ") {
                 this.todoAr.push(task); 
                 this.newtask =" ";
             }

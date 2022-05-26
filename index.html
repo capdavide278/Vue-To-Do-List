@@ -15,8 +15,8 @@
     <div id="app" class="container">
         <h1>Lista cose da fare:</h1>
         <div class="new-todo">
-            <input type="text" placeholder="aggiungi">
-            <button @click="aggiungi">Aggiungi</button>
+            <input type="text" v-model="newtask" placeholder="aggiungi">
+            <button @click="aggiungi()">Aggiungi</button>
         </div>
 
         <div class="cosa-da-fare">

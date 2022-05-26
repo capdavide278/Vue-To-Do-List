@@ -24,7 +24,7 @@
                 <li v-for="(item,i) in todoAr" :key="i">
                     <div class="inline" :class="trattino(item)">{{item.text}}</div>
 
-                    <div @click="rimuovi" class="inline"><i class="fas fa-times"></i></div>
+                    <div @click="rimuovi(i)" class="inline"><i class="fas fa-times"></i></div>
                 </li>
             </ul>
         </div>

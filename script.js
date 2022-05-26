@@ -18,7 +18,7 @@ Bonus:
 const todo = new Vue({
     el : '#app',
     data : {
-        newtask : "",
+        /* newtask : "", */
         todoAr : [
             {
             text : 'cucinare',
@@ -48,6 +48,7 @@ const todo = new Vue({
             }
         },
 
+        /* milestone 2 */
         rimuovi(index){
             this.todoAr.splice(index, 1);
         }

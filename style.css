@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.tratteggio{
+    text-decoration: line-through;
+}
+
+.inline{
+    display: inline-block;
+}

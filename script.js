@@ -40,6 +40,11 @@ const todo = new Vue({
     },
 
     methods :{
-        
+
+        trattino(item){
+            if (item.done == true) {
+                inline.classList.add('tratteggio');
+            }
+        }
     } 
 });

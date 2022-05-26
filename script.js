@@ -41,10 +41,15 @@ const todo = new Vue({
 
     methods :{
 
+        /* milesstone 1 */
         trattino(item){
             if (item.done == true) {
-                inline.classList.add('tratteggio');
+                return 'tratteggio';
             }
+        },
+
+        rimuovi(index){
+            this.todoAr.splice(index, 1);
         }
     } 
 });
